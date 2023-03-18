@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to top, rgb(49, 144, 221), rgb(65, 200, 230));
+    animation: transitionIn 0.75s;
+}
+
+
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*-----------------------------navbar-----------------------------*/
+
+nav{
+    
+    width: 100%;
+    height: 8vh;
+    margin-top: 0px;
+    /*background: linear-gradient(to top, rgb(72, 159, 230), rgb(89, 190, 212));*/
+    background: black;
+    box-shadow: 0px 3px 6px 0px gray;
+    z-index: 999;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    margin: 20px 50px 0px 0px;
+    
+}
+nav ul li{
+    text-decoration: none;
+    margin: 0px 40px 0px 0px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vw;
+
+
+}
+
+.about-drop{
+    margin-right: 40px;
+}
+.about-drop a{
+    color: white;
+    text-decoration: underline 1px solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vw;
+
+}
+
+.about-drop-content{
+    background: white;
+    width: 187px;
+    height: auto;
+    box-shadow: 0px 3px 6px 0px black;
+    display: none;
+    top: 40px;
+    position: absolute;
+    
+}
+
+.about-drop-content a{
+    text-decoration: none;
+    padding: 10px 25px 10px;
+    float: left;
+    width: 187px;
+    text-align: left;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+
+}
+
+.about-drop:hover .about-drop-content{
+    display: block;
+}
+.about-drop-content a:hover{
+    /*background: linear-gradient(to top, rgba(49, 144, 221, 0.521), rgba(65, 200, 230, 0.521));*/
+    /*background: rgb(240, 197, 191);*/
+    background: rgba(255, 166, 0, 0.775);
+}
+
+/*--------------------------------navbar end here-------------------------------------------*/
+
+.container{
+    width: 100%;
+    height: auto;
+}
+
+
+.location iframe{
+    width: 800px;
+    height: 500px;
+    margin-top: 130px;
+    float: right;
+    margin-right: 10px;
+    
+}
+
+.info{
+    width: 720px;
+    height: 75vh;
+    margin: 20px 0px 0px 4px;
+    text-align: center;
+}
+
+.info h1{
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+.info p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+
+}
+
+.info img{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/*----------------------------------------------------Media Start Here------------------------------------------------------------------------*/
+/*----------------------------------------------------Media Start Here------------------------------------------------------------------------*/
+/*----------------------------------------------------Media Start Here------------------------------------------------------------------------*/
+/*----------------------------------------------------Media Start Here------------------------------------------------------------------------*/
+/*----------------------------------------------------Media Start Here------------------------------------------------------------------------*/
+/*----------------------------------------------------Media Start Here------------------------------------------------------------------------*/
+
+
+
+
+@media(max-width: 768px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background: linear-gradient(to top, rgb(49, 144, 221), rgb(65, 200, 230));
+    }
+    
+    /*-----------------------------navbar-----------------------------*/
+    
+    nav{
+        position: fixed;
+        width: 100%;
+        height: 10vh;
+        margin-top: -50px;
+        /*background: linear-gradient(to top, rgb(72, 159, 230), rgb(89, 190, 212));*/
+        background: black;
+        box-shadow: 0px 3px 6px 0px gray;
+        z-index: 999;
+    }
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        float: right;
+        margin: 0px 0px 0px 10px;
+        
+    }
+    nav ul li{
+        text-decoration: none;
+        margin: 10px 15px 0px 0px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 3vw;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    
+    }
+    
+    .about-drop{
+        margin-right: 15px;
+        margin-top: 10px;
+    }
+    .about-drop a{
+        color: white;
+        font-size: 3vw;
+        text-decoration: underline 1px solid;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    
+    .about-drop-content{
+        background: white;
+        width: 187px;
+        height: auto;
+        box-shadow: 0px 3px 6px 0px black;
+        display: none;
+        top: 40px;
+        position: absolute;
+        
+    }
+    
+    .about-drop-content a{
+        text-decoration: none;
+        padding: 10px 25px 10px;
+        float: left;
+        width: 187px;
+        text-align: left;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+    
+    }
+    
+    .about-drop:hover .about-drop-content{
+        display: block;
+    }
+    .about-drop-content a:hover{
+        /*background: linear-gradient(to top, rgba(49, 144, 221, 0.521), rgba(65, 200, 230, 0.521));*/
+        /*background: rgb(240, 197, 191);*/
+        background: rgba(255, 166, 0, 0.775);
+    }
+    
+    /*--------------------------------navbar end here-------------------------------------------*/
+    
+    .container{
+        width: 100%;
+        height: auto;
+    }
+    
+    
+    .location iframe{
+        width: 90vw;
+        height: 55vw;
+        margin-top: 80px;
+        float: right;
+        margin-right: 10px;
+        margin-bottom: 50px;
+        
+    }
+    
+    .info{
+        width: 80vw;
+        height: 75vh;
+        margin: 20px 0px 0px 30px;
+        text-align: center;
+    }
+    
+    .info h1{
+        width: 90vw;
+        text-align: center;
+        margin: auto;
+        margin-top: 50px;
+        color: white;
+        font-size: 6vw;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        border-bottom: 1px solid white;
+    }
+    
+    .info p{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3.7vw;
+        padding: 5px;
+    
+    }
+    
+    .info img{
+        width: 20px;
+        height: 20px;
+    }
+    
+
+}
+
+
+

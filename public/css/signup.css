@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to top, rgb(75, 156, 223), rgb(89, 205, 231));
+    animation: transitionIn 0.75s;
+}
+
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.name-banner{
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    background: rgb(35, 135, 218);
+    box-shadow: 0px 32px 64px 0px black;
+    animation: transitionIn 1s;
+
+}
+
+.name-banner h1{
+    width: 80%;
+    margin: auto;
+    color: white;
+    padding: 20px;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid red;
+    animation: transitionIn 1.5s;
+}
+.name-banner p{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form{
+    width: 500px;
+    height: 280px;
+    margin: auto;
+    margin-top: 0px;
+    margin-right: 178px;
+    background: rgb(74, 193, 230);
+    box-shadow: 0px 3px 6px 0px black;
+    display: flex;
+    flex-direction: column;
+    
+}
+form input{
+    width: 50%;
+    height: 30px;
+    margin: auto;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+form input:focus{
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+form button{
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 3px 6px 0px black;
+}
+
+form select{
+    width: 150px;
+    margin-left: 10px;
+}
+form select #null{
+    display: none;
+}
+ 

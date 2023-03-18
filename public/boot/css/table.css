@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.table-responsive{
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+table tr td button{
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    background: rgb(45, 100, 250);
+}
+
+
+button{
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    background: rgb(45, 100, 250);
+}

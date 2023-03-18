@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/video.css">
+    <title>Video's | Unicure India</title>
+</head>
+<body>
+
+    <h3 class="heading">Video Gallery</h3>
+
+    <div class="container">
+        <div class="main-video">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HgPTZRwRuu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+<br>
+
+        <div class="video-list">
+            <div class="vid active">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HgPTZRwRuu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+            </div>
+
+            <div class="vid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GifpZtxehi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+
+            
+
+            
+        </div>
+    
+       
+
+    </div>
+
+    
+
+    <script>
+
+        let listVideo = document.querySelectorAll('.video-list .vid');
+        let mainVideo = document.querySelector('.main-video iframe');
+
+        listVideo.forEach(video =>{
+            video.onclick = () =>{
+                listVideo.forEach(vid => vid.classList.remove('active'));
+                video.classList.add('active');
+                if(video.classList.contains('active')){
+                    let src = video.children[0].getAttribute('src');
+                    mainVideo.src = src;
+                };
+            };
+        });
+
+    </script>
+    
+</body>
+</html>
